@@ -13,7 +13,7 @@ public class ArrayList {
 
 
     public void add(int data) {
-        if(isFull()) {
+        if(size >= datum.length) {
             int[] newDatum = new int[datum.length * 2];
 
             for (int i = 0; i < datum.length; i++) {
@@ -41,10 +41,6 @@ public class ArrayList {
 
     public int getArrayLength() {
         return datum.length;
-    }
-
-    private boolean isFull() {
-        return size == datum.length;
     }
 
     public void addAt(int index, int data) {
