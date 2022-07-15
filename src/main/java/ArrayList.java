@@ -32,9 +32,10 @@ public class ArrayList {
 
 
     public void removeAt(int index) {
-        for(int i = index + 1; i < datum.length; i++) {
+        for(int i = index + 1; i < size; i++) {
             datum[i-1] = datum[i];
         }
+
         size--;
     }
 
